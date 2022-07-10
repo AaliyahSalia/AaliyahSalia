@@ -1,0 +1,53 @@
+#Learned from @TechWithTim
+
+print("Welcome to my first quiz!")
+print("Do you want to play?")
+playing = input("Yes or No? ")
+
+if playing.lower() != "yes":
+  quit()
+print("Okay, let's play!")
+score = 0
+
+answer = input("What is Harry Potter's father's name?  ")
+if answer.lower() == "james":
+  print("Correct!")
+  score += 1
+else:
+  print("Incorrect!")
+
+answer = input("How are students sorted into their houses?  ")
+if answer.lower() == "the sorting hat":
+  print("Correct!")
+  score += 1
+else:
+  print("Incorrect!")
+
+answer = input("What house is Harry Potter sorted into?  ")
+if answer.lower() == "griffindor":
+  print("Correct!")
+  score += 1
+else:
+  print("Incorrect!")
+
+answer = input("Which artist played the character of Hermione Granger?  ")
+if answer.lower() == "emma watson":
+  print("Correct!")
+  score += 1
+else:
+  print("Incorrect!")
+
+answer = input("What animal can Harry speak to?  ")
+if answer.lower() == "snake":
+  print("Correct!")
+  score += 1
+else:
+  print("Incorrect!")
+
+
+print("You got " + str(score) + " questions correct!")
+print("Your percentage is: " + str((score/4) * 100) + "%!")
+
+
+
+
